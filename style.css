@@ -24,48 +24,12 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	text-align: center;
 }
 h1 {
 	font-family: 'Orbitron', sans-serif;
-	font-size: 2rem;
+	font-size: 4rem;
 	margin: 0 0 2rem 0;
 	color: var(--hover);
-}
-button {
-	outline: none;
-	border: 0.1rem solid var(--color);
-	color: var(--color);
-	background: transparent;
-	cursor: pointer;
-	font-size: 100%;
-	padding: 0.5rem 1rem;
-	position: relative;
-	transform: skewX(-30deg);
-	letter-spacing: 0.1rem;
-	text-transform: uppercase;
-	margin: 0 0 1rem 0;
-	min-width: 10rem;
-	text-align: left;
-	transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1),
-				color 0.2s ease,
-				border 0.2s ease;
-}
-button::before {
-	content: '';
-	display: block;
-	width: 1rem;
-	height: 100%;
-	background: var(--color);
-	position: absolute;
-	left: -1.75rem;
-	top: 0;
-	transition: background 0.2s ease;
-}
-button:hover {
-	transform: scaleX(1.15) skewX(-30deg);
-	border: 0.1rem solid var(--hover);
-	color: var(--hover);
-}
-button:hover::before {
-	background: var(--hover);
+	text-shadow: 0 0 1rem var(--color);
 }
